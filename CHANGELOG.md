@@ -1,10 +1,15 @@
 # Changelog
 
-## 5.0.0-beta.1 (2019-10-20)
+## 5.0.0-beta.1 (2019-11-04)
+
+-   Removed unused dependencies
+-   Added leasot to find open todos easily (`yarn todos`)
+
+## 5.0.0-beta.1 (2019-11-03)
 
 -   Going all in on TypeScript: all files including config files are now TypeScript (Webpack, i18next scanner, postcss, eslint)
 -   Cleanup several minor things
--   Increase minimum Node and Yarn versions to 10.15.0 and 1.17.0 for no really obvious reason (try lower versions at your own risk)
+-   Increase minimum Node and Yarn versions to 10.15.0 and 1.17.0
 -   Increase minimum version for IE in .browserslistrc from IE 9 to IE 11
 
 ## 4.2.0 (2019-09-01)
@@ -21,9 +26,9 @@
 
 ## 4.0.0 (2019-07-23)
 
--   Added @babel/plugin-transform-runtime to allow async/await in tests ([more info](https://github.com/liferay/liferay-npm-tools/issues/105))
--   BREAKING: Replaced Enzyme with @testing-library/react
--   BREAKING: updated lint-staged to 9.x
+-   Added `@babel/plugin-transform-runtime` to allow async/await in tests ([more info](https://github.com/liferay/liferay-npm-tools/issues/105))
+-   BREAKING: Replaced Enzyme with `@testing-library/react`
+-   BREAKING: updated `lint-staged` to 9.x
 -   Removed [moduleRoots](https://github.com/AsaAyers/js-hyperclick#moduleroots) from package.json
 
 ## 3.2.0 (2019-06-12)
@@ -53,16 +58,16 @@ TypeScript was used in production for over a month now and would consider it sta
 
 ## 2.9.0 (2019-04-28)
 
--   Experimentally added dependency-cruiser
+-   Experimentally added `dependency-cruiser`
 -   Updated dependencies to their most recent versions
 
 ## 2.8.0 (2019-04-09)
 
--   Regular depdency update (noteworthy: react-redux v7!)
+-   Regular depdency update (noteworthy: `react-redux` v7 with Hooks!)
 
 ## 2.7.0 (2019-04-03)
 
--   Dropping @babel/polyfill in favor of core-js 3 since [@babel/polyfill is now deprecated](https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md#babelpolyfill)
+-   Dropping `@babel/polyfill` in favor of `core-js` 3 since [`@babel/polyfill` is now deprecated](https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md#babelpolyfill)
 -   Regular dependency update
 
 ## 2.6.0 (2019-03-21)
@@ -85,21 +90,21 @@ TypeScript was used in production for over a month now and would consider it sta
 
 ## 2.4.0 (2019-02-05)
 
--   Upgraded to immer 2.0.0
+-   Upgraded to `immer` 2.0.0
 -   Increased minimum required version for Node (now: >=8.11.3) and Yarn (now: 1.12.3) since earlier versions _might_ cause problems under certain circumstances
 -   Added `concurrently` for script concurrency and `yarn-or-npm`
 -   Added `stylelint` and a (yet) minimalistic stylelint config
 
 ## 2.3.0 (2019-02-01)
 
--   Temporarily(?) dropped express-manifest-helpers dependency due to [unresolved security issue](https://github.com/danethurber/express-manifest-helpers/pull/4)
+-   Temporarily(?) dropped `express-manifest-helpers` dependency due to [unresolved security issue](https://github.com/danethurber/express-manifest-helpers/pull/4)
 -   Changed case of translations from kebab-case to snake_case (en-US ➡ en_US)
 -   Added [`immer`](https://github.com/mweststrate/immer) as dependency
--   Updated Jest to Jest 24 and dropped babel-core@7.0.0-bridge.0 as it is no longer needed in Jest 24
+-   Updated Jest to Jest 24 and dropped `babel-core@7.0.0-bridge.0` as it is no longer needed in Jest 24
 
 ## 2.2.0 (2019-01-23)
 
--   Added @babel/plugin-proposal-optional-chaining
+-   Added `@babel/plugin-proposal-optional-chaining`
 -   Switched to using a [project-wide Babel config](https://babeljs.io/docs/en/config-files#project-wide-configuration)
 
 ## 2.1.0 (2018-12-17)
@@ -122,7 +127,7 @@ TypeScript was used in production for over a month now and would consider it sta
 
 ## 2.0.1 (2018-10-10)
 
--   Moved Husky config to its own .huskyrc file
+-   Moved Husky config to its own `.huskyrc` file
 
 ## 2.0.0 (2018-10-10)
 
